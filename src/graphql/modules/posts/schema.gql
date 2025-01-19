@@ -1,5 +1,5 @@
 type Post{
-    _id: id!
+    _id: ID!
     title: String!
     content: String!
     author: User!
@@ -7,7 +7,7 @@ type Post{
 }
 
 input PostInput{
-     _id: id!
+     _id: ID!
     title: String!
     content: String!
     author: ID!

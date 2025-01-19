@@ -2,7 +2,7 @@ import Post from '../../../models/Post'
 
 export default{
     Query:{
-        posts: ()=>find(),
+        posts: ()=>Post.find(),
         post: (_, { id }) => Post.findById(id),
     },
     Mutation:{

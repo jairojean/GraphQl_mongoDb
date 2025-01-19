@@ -1,5 +1,5 @@
 type User{
-    _id: id!
+    _id: ID!
     firstName: String!
     lastName: String!
     email: String
@@ -7,7 +7,7 @@ type User{
 }
 
 input UserInput{
-    _id: id!
+    _id: ID!
     firstName: String!
     lastName: String!
     email: String
@@ -24,3 +24,5 @@ type Mutation {
     updateUser(id: ID, data:UserInput!): User!
     deleteUser(id: ID!): Boolean
 }
+
+ 
